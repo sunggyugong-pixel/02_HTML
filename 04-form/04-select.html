@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select</title>
+</head>
+<body>
+<form action="" method="get">
+    <h2>select, option</h2>
+    <p>
+        <label for="city">지역</label>
+        <select name="city" id="city"> <!-- name은 백엔드 서버에 전송하는 것, id는 화면에 있는 고유한 값 (HTML + CSS 에게 전달하는 용) -->
+            <!-- HTML 상, 옵션값들 중에 아무것도 선택(selected)되지 않으면, 첫번째 옵션이 기본값으로 선택되어져 있음 -->
+            <option value="seoul">서울</option>
+            <option value="busan">부산</option>
+            <option value="incheon" selected>인천</option>
+            <option value="gyeonggi" selected>경기</option>
+
+        </select>
+    </p>
+    <button type="submit">가입하기</button>
+    <button type="reset">다시쓰기</button>
+    <button type="button">아무 동작하지 않는 버튼</button>
+    <!-- 보통 javascript를 통해 프로그래밍 해서 기능을 작성 후, type="button"인 버튼에 기능을 걺 -->
+    <!-- 로그아웃 등 -->
+</form>
+
+
+
+
+</body>
+</html>

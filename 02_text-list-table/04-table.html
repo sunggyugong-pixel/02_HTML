@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+<!-- 브라우저는 기본적으로 표에 테두리가 표현이 안 됨 -->
+<style>
+    table {
+        border-collapse: collapse;
+        margin-bottom: 24px;
+        padding: 6px 16px;
+        text-align: center;
+    }
+
+    th,
+    td {
+        border: 1px solid #94a3b8;
+        
+    }
+</style>
+    
+</head>
+<body>
+<table>
+    <thead> <!-- 사람은 구분이 됨 -->
+    <tr>
+        <th>이름</th>
+        <th>나이</th>
+        <th>전화번호</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>이름</td>
+        <td>나이</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>ㅅㅎㅇ</td>
+        <td>26</td>
+        <td>01012345678</td>
+    </tr>
+    <tr>
+        <td>아무개</td>
+        <td>22</td>
+        <td>01123456789</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+<body>
+<h2>colspan : 열 병합 (옆으로 합치기)</h2>
+    <table>
+        <tr>
+            <td colspan="2">열 병합</td>   <!--
+            최대 열만큼만 됨 이상으로는 하면 안 됨
+            줄을 바꾸는 거니까 가로세로로 이해하면 안 됨
+            -->
+            <td>얘는 따로</td>
+            <td>내용6</td>
+        </tr>
+        <tr>
+            <td>내용2</td>
+            <td>내용3</td>
+            <td>내용4</td>
+        </tr>
+    </table>
+
+<h2>rowspan : 행 병합 (아래로 합치기)</h2>
+    <table>
+        <tr>
+            <td rowspan="3">행 병합</td> <!-- ai가 해주니까 크게 외울 필요는 없음 -->
+            <td>가가가</td>
+            <td>나나나</td>
+            <td>다다다</td>
+            <td>라라라</td>
+        </tr>
+        <tr>
+            <td>고고고</td>
+            <td>노노노</td>
+        </tr>
+        <tr>
+            <td>루루루</td>
+            <td>무무무</td>
+        </tr>
+    </table>
+</body>
+
+</html>
